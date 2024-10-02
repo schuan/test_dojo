@@ -5,7 +5,7 @@
 {% block content %}
 <div class="jumbotron">
   <div class="container">
-    <h1>COMP5700/6700 Secure Software Process</h1>
+    <h1>COMP6700 Secure Software Process</h1>
     <p>Learn to hack!</p>
   </div>
 </div>
@@ -13,14 +13,15 @@
 <div class="container">
 
 
-  <h2> Welcome to COMP5700/6700 Secure Software Process Project Website!</h2>
+  <h2> Welcome to COMP6700 Secure Software Process Project Website!</h2>
 
   <p><br><br>
 
   <h2> Launching Challenges</h2>
-  <p>At the core of this COMP5700/6700 project is flags. How do you get those flags? Solve challenges. You can start a challenge by clicking on the Challenges tab at the top, selecting a module, clicking on a particular level, and hitting Start. In order to access that challenge, you have several options.
+  <p>At the core of this COMP6700 project is flags. How do you get those flags? Solve challenges. You can start a challenge by clicking on the Challenges tab at the top, selecting a module, clicking on a particular level, and hitting Start. In order to access that challenge, you have several options.
   
-  <p>One of the options is using ssh. In order to ssh into your challenge instances, you must add a public ssh key to Settings > SSH Key. You can quickly generate an ssh key by running <span style="color: #87CEFA">ssh-keygen -f key -N ''</span> in a terminal on your (unix-friendly) host machine. This will generate files key and key.pub, which are your private and public keys respectively. Once you have linked your ssh key to your account, you can run ssh -i key hacker@dojo.pwn.college to connect into your challenge instance.
+  <p>One of the options is using ssh. In order to ssh into your challenge instances, you must add a public ssh key to Settings > SSH Key. You can quickly generate an ssh key by running <span style="color: #87CEFA">ssh-keygen -f key -N ''</span> in a terminal on your (unix-friendly) host machine. This will generate files key and key.pub, which are your private and public keys respectively.
+  <p>Once you have linked your ssh key to your account, you can run ssh -i key hacker@columbus.cse.eng.auburn.edu to connect into your challenge instance.
 
   <p>Once you are in a challenge instance, your goal is to get the contents of the /flag file. Unfortunately for you, you are executing as the hacker user, but /flag is only readable by the root user. Fortunately, however, there are challenge programs located inside of the /challenge directory, which when run, will run with the privileges of the root user. Solve the challenge to get the /flag, and then submit it in order to complete the challenge!
 
